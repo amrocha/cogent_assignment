@@ -1,0 +1,64 @@
+.main {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "sidebar map";
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mapContainer {
+  position: relative;
+
+  grid-area: map;
+}
+
+.inputGroup {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 48px;
+
+  display: flex;
+}
+
+.popup {
+  color: black;
+}
+
+.searchInput {
+  flex: 1 1 auto;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid grey;
+}
+
+.groupButton {
+  flex: 0 0 auto;
+  border: 1px solid grey;
+
+  transform: translateX(-1px);
+
+  &:last-of-type {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  overflow: scroll;
+  border-right: 1px solid #ccc;
+  width: 400px;
+  background-color: white;
+}

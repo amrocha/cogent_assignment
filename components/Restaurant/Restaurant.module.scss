@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  overflow: scroll;
+  background-color: white;
+  color: #333;
+
+  width: 400px;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+
+  > img {
+    align-self: center;
+    margin-right: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+}
+
+.metadataContainer {
+  > * + * {
+    padding-top: 5px;
+  }
+}
