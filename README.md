@@ -18,7 +18,7 @@ First you need to add a Foursquare API token. Create a `.env.local` file at the 
 FSQ_API_TOKEN=YOUR_TOKEN
 ```
 
-First, run the development server:
+Then, run the development server:
 
 ```bash
 npm run dev
